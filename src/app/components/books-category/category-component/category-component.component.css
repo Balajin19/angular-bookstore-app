@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.headdingButton {
+  height: 30px;
+}
+button {
+  padding: 0 5px;
+  font-weight: 400;
+}
+.slide {
+  background-color: #dbf3c5;
+  border: 3px solid;
+  border: radius 50px !important;
+  border-image: linear-gradient(180deg, rgb(0, 255, 0) 50%, rgba(0, 0, 255) 20%)
+    1;
+  width: 100%;
+  cursor: pointer;
+}
+.carousel {
+  margin: 30px 30px;
+  padding: 0 40px;
+}
+.text-color {
+  color: transparent;
+}
+.animated-button{
+  animation: color-change 1s infinite; 
+  padding: 5px 10px;
+ }
+ @keyframes color-change {
+   0% { color: rgb(255, 255, 255); border-radius: 0px; }
+   100% { color: rgb(220, 156, 233); border-radius: 10px; }
+ }
+@media screen and (max-width: 991px) {
+  .carousel {
+    margin: 0px 0px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text-color {
+    display: none;
+  }
+  .headding-category{
+    padding: 0;
+  }
+  .animated-button{
+    padding: 2px;
+   }
+}
+.background {
+  position: relative;
+  margin: 0 40px;
+}
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  color: pink !important;
+}
